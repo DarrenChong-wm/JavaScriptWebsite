@@ -1,2 +1,2 @@
-# JavaWebsite
-JavaWebsite
+# JavaScriptWebsite
+JavaScriptWebsite
