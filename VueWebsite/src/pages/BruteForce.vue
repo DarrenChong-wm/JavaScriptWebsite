@@ -11,7 +11,7 @@ export default {
 
 <template>
   <header>
-    <h1> Sorting Visualisation</h1>
+    <h1> Brute Force Visualisation</h1>
   </header>
 
 </template>

@@ -1,33 +1,15 @@
-<!-- <script>
-
-import Sorting from './pages/Sorting.vue'
-
-const routes = {
-  '/': Main,
-  '/sorting': Sorting
-}
+<script>
+import NavBarFirstHalf from './components/NavBarFirstHalf.vue';
+import NavBarSecondHalf from './components/NavBarSecondHalf.vue';
 
 export default {
-  data() {
-    return {
-      currentPath: window.location.hash
-    }
-  },
-  computed: {
-    currentView() {
-      return routes[this.currentPath.slice(1) || '/'] || NotFound
-    }
-  },
-  mounted() {
-    window.addEventListener('hashchange', () => {
-		  this.currentPath = window.location.hash
-		})
-  }
+  components: { NavBarFirstHalf, NavBarSecondHalf}  
 }
-</script> -->
-<script></script>
+</script>
 
 
 <template>
+  <NavBarFirstHalf/>
+  <NavBarSecondHalf/>
   <router-view/>
 </template>

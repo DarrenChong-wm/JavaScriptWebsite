@@ -1,19 +1,29 @@
 <script>
 import { useRoute } from 'vue-router'
+import HelloWorld from '../components/HelloWorld.vue'
+import TheWelcome from '../components/TheWelcome.vue'
 
 export default {
     setup() {
         const route = useRoute()
     },
+    components: { HelloWorld, TheWelcome}
 }
+
 </script>
 
 <template>
-    <header>
-        <h1> Algorithm Visualisation App</h1>
-    </header>
+  <header>
+    <img alt="Vue logo" class="logo" src="../assets/logo.svg" width="125" height="125" />
 
-        <router-link :to="{ name: 'Sorting' }">Sorting Algorithm</router-link>
+    <div class="wrapper">
+      <HelloWorld msg="You did it!" />
+    </div>
+  </header>
+
+  <main>
+    <TheWelcome />
+  </main>
 </template>
 
 <style scoped>

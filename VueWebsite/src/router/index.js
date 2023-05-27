@@ -1,17 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Main from '../pages/Main.vue'
-import Sorting from '../pages/Sorting.vue'
+import BruteForce from '../pages/BruteForce.vue'
 
 const routes = [
   {
-    path: '',
+    path: '/',
     name: 'Main',
     component: Main
   },
   {
-    path: '/sorting',
-    name: 'Sorting',
-    component: Sorting
+    path: '/brute force',
+    name: 'Brute Force',
+    component: BruteForce
   }
 ]
 
