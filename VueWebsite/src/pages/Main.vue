@@ -7,7 +7,7 @@ export default {
     setup() {
         const route = useRoute()
     },
-    components: { HelloWorld, TheWelcome}
+    components: {HelloWorld ,TheWelcome}
 }
 
 </script>
@@ -26,7 +26,7 @@ export default {
   </main>
 </template>
 
-<style scoped>
+<style >
 header {
   line-height: 1.5;
 }
@@ -43,6 +43,11 @@ header {
     padding-right: calc(var(--section-gap) / 2);
   }
 
+  main {
+    display: grid;
+    align-items: center;
+  }
+
   .logo {
     margin: 0 2rem 0 0;
   }
@@ -52,5 +57,10 @@ header {
     place-items: flex-start;
     flex-wrap: wrap;
   }
+
+  body {
+    height: 100%;
+  } 
+  
 }
 </style>

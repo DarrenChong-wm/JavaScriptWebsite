@@ -7,7 +7,7 @@ module.exports = {
           ...options,
           compilerOptions: {
             // treat any tag that starts with ion- as custom elements
-            isCustomElement: tag => tag.startsWith('HelloWorld')
+            isCustomElement: tag => tag.startsWith('-ion')
           }
         }))
     }
