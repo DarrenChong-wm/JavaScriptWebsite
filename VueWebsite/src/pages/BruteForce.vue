@@ -5,20 +5,37 @@ export default {
     setup() {
         const route = useRoute()
 
+    },
+    methods: {
+      goBack() {
+        this.$router.go(-1)
+      }
     }
 }
 </script>
 
 <template>
+  <div>
+    <button @click="goBack">
+      Back
+    </button>
   <header>
     <h1> Brute Force Visualisation</h1>
   </header>
-
+ 
+  </div>
 </template>
 
 <style scoped>
+
 header {
   line-height: 1.5;
+  align-items: center;
+  justify-content: center;
+}
+
+div {
+  grid-column: span 2;
 }
 
 .logo {
@@ -41,6 +58,12 @@ header {
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div {
+    grid-column: span 2;
   }
 }
 </style>
