@@ -1,10 +1,14 @@
 <script>
 import { useRoute } from 'vue-router'
+import BinaryTreeTraversal from "../components/BinaryTreeTraversal.vue"
 
 export default {
     setup() {
         const route = useRoute()
 
+    },
+    components : {
+      BinaryTreeTraversal
     },
     methods: {
       goBack() {
@@ -22,7 +26,7 @@ export default {
   <header>
     <h1> Brute Force Visualisation</h1>
   </header>
- 
+  <BinaryTreeTraversal/>
   </div>
 </template>
 
